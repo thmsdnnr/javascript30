@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono');
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono|VT323');
 
 body {
   background-image: url('./images/background.jpg');
@@ -7,34 +7,36 @@ body {
 
 div.keys{
   display: flex;
-  bak
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;;
+  align-items: center;
   margin: auto;
-  width: 700px;
+  width: auto;
+  padding: 10%;
 }
 
 div.key{
+  flex: 0 0.25 auto;
   height: 100px;
-  width: 75px;
+  width: 100px;
   border: 1px solid black;
   text-align: center;
-  font-family: 'Oxygen Mono', monospace;
-  margin: 2px;
+  margin: auto;
 }
 
 div.key h1 {
-  font-size: 36px;
+  font-family: 'VT323', monospace;
+  font-size: 42px;
   text-shadow: 2px 4px 4px #DDD;
 }
 
 div.key h6 {
+  font-family: 'Oxygen Mono', monospace;
   font-size: 14px;
 }
 
 div.key-active {
-  transform: scale(1.1);
-  box-shadow: 0 0 0 4px orange;
+  transform: scale(1.05);
+  box-shadow: 0 0 2px 2px orange;
   transition: 50ms
 }
