@@ -1,6 +1,8 @@
 #Day One of JS30
 ##Drum Machine using Flexbox and Sweet 808 Samples
 
+[http://codepen.io/thmsdnnr/full/GrROKv/](http://codepen.io/thmsdnnr/full/GrROKv/ check it out!)
+
 I was used to using jQuery and wrapping everything in a $(document).ready(function(){}); without thinking, so I was rather confused at first when `var keys = document.getElementsByClassName('key');` returned undefined. I had to wrap my code in window.onload = function() { } instead.
 
 Another challenge was adding and removing class names dynamically on a keypress. I console.log()'d my keypress event to find className and decided initially to do a `className+= " key-active";`. Later after looking at the solution's code, I found a rather more efficient way: (`classList.add('[CLASS TO ADD]')` and `classList.remove('[CLASS TO REMOVE]')`. The downside to my initial approach was that it's not very extensible. To remove a class, I had to set className back to the original name which means I'd either have to save off a copy of the class name prior to modifying it to restore it later or I'd have to know at any given point in a program what classes the element should have, which is *really* difficult when you have lots of classes.
