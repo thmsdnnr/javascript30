@@ -22,6 +22,7 @@ div.key{
   border: 1px solid black;
   text-align: center;
   margin: auto;
+  transition: all 50ms
 }
 
 div.key h1 {
@@ -37,6 +38,6 @@ div.key h6 {
 
 div.key-active {
   transform: scale(1.05);
+  border-color: yellow;
   box-shadow: 0 0 2px 2px orange;
-  transition: 50ms
 }
