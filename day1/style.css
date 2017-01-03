@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono|VT323');
+
+body {
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+}
+
+div.keys{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;;
+  align-items: center;
+  margin: auto;
+  width: auto;
+  padding: 10%;
+}
+
+div.key{
+  flex: 0 0.25 auto;
+  background-color: rgba(255, 14, 202, 0.2);
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+  transition: all 50ms
+}
+
+div.key h1 {
+  font-family: 'VT323', monospace;
+  font-size: 64px;
+  margin: 2px 0 auto 0;
+  padding: -6px 0 0 0;
+  text-shadow: 2px 4px 4px #DDD;
+}
+
+span.sound {
+  font-family: 'Oxygen Mono', monospace;
+  font-size: 14px;
+}
+
+div.key h6 {
+
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 14px;
+  }
+
+div.key-active {
+  transform: scale(1.05);
+  border-color: yellow;
+  box-shadow: 0 0 2px 2px orange;
+}
