@@ -22,10 +22,12 @@ This worked, but it was messy, as it is clogging up the event loop with unnecess
 
 I didn't know about the 'transitionend' event. An event gets created for each property name in my CSS div.key-active class being transformed, so in this case, these events are fired:
 
-`TransitionEvent {isTrusted: true, propertyName: "transform", elapsedTime: 0.05, pseudoElement: "", type: "transitionend"…}bubbles: truecancelBubble: falsecancelable: truecomposed: falsecurrentTarget: nulldefaultPrevented: falseelapsedTime: 0.05eventPhase: 0isTrusted: truepath: Array[6]propertyName: "transform"pseudoElement: ""returnValue: truesrcElement: div.keytarget: div.keytimeStamp: 11133.53type: "transitionend"__proto__: TransitionEvent
-app.js:32
+`TransitionEvent {isTrusted: true, propertyName: "transform", elapsedTime: 0.05, pseudoElement: "", type:
+"transitionend"…}bubbles: truecancelBubble: falsecancelable: truecomposed: falsecurrentTarget: nulldefaultPrevented:
+falseelapsedTime: 0.05eventPhase: 0isTrusted: truepath: Array[6]propertyName: "transform"pseudoElement: ""returnValue:
+truesrcElement: div.keytarget: div.keytimeStamp: 11133.53type: "transitionend"__proto__: TransitionEvent app.js:32
 
-TransitionEvent {isTrusted: true, propertyName: "box-shadow", elapsedTime: 0.05, pseudoElement: "", type: "transitionend"…}`
+TransitionEvent {isTrusted: true, propertyName: "box-shadow", elapsedTime: 0.05, pseudoElement: "", type: "transitionend"...}`
 
 corresponding to these lines of CSS:
 
@@ -47,5 +49,7 @@ We wait until the transform is complete and then remove key-active. The other ad
 ###Potential Enhancements:
 
 *Ability to load different sets of drum sounds (808, 909, etc.)
+
 *Ability to change drum sounds for each instrument on the fly (new kick, new snare, etc.)
+
 *Ability to program patterns like a step sequencer (would be more another project really though than an enhancement!!)
