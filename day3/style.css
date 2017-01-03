@@ -1,0 +1,38 @@
+:root {
+  --width: 100px;
+  --height: var(--width);
+  --rotation-speed: 2000ms;
+  --fnt-sz: 20px;
+}
+
+div.example {
+  margin-top: calc(var(--height)*1.5);
+  height: var(--height);
+  width: var(--width);
+  margin: 50px;
+  align: right;
+  font-size: var(--fnt-sz);
+  background-color: tomato;
+  animation: spinAnimate var(--rotation-speed) infinite;
+}
+
+div.slidebox {
+  padding: 0 calc(var(--height)/5);
+}
+
+@-webkit-keyframes spinAnimate {
+  from   { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+@-moz-keyframes spinAnimate {
+  from   { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+@-o-keyframes spinAnimate {
+  from   { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+@keyframes spinAnimate {
+  from   { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
