@@ -27,14 +27,22 @@ div.key{
 
 div.key h1 {
   font-family: 'VT323', monospace;
-  font-size: 42px;
+  font-size: 64px;
+  margin: 2px 0 auto 0;
+  padding: -6px 0 0 0;
   text-shadow: 2px 4px 4px #DDD;
 }
 
-div.key h6 {
+span.sound {
   font-family: 'Oxygen Mono', monospace;
   font-size: 14px;
 }
+
+div.key h6 {
+
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 14px;
+  }
 
 div.key-active {
   transform: scale(1.05);
