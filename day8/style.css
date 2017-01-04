@@ -1,0 +1,30 @@
+div.app {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+}
+
+div.canvas {
+  position: relative;
+  border: 2px solid green;
+}
+
+div.controls {
+
+}
+
+button {
+  background-color: orange;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: Courier New;
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
