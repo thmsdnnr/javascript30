@@ -1,0 +1,68 @@
+body {
+  background-color: #CCC;
+  background: -webkit-linear-gradient(right,rgba(209, 146, 117, 0.5),rgba(41, 36, 33, 0.8)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(209, 146, 117, 0.5),rgba(41, 36, 33, 0.8)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(209, 146, 117, 0.5),rgba(41, 36, 33, 0.8)); /*Fx 3.6-15*/
+  background: linear-gradient(to right,rgba(209, 146, 117, 0.5),rgba(41, 36, 33, 0.8)); /*Standard*/
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 100;
+}
+
+div.app {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  padding: 40px 20px;
+  width: 400;
+  margin: auto;
+}
+
+div.header {
+  font-family: 'Helvetica Neue', sans-serif;
+  width: 900px;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+}
+
+form.search-form input {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  background-color: #CCC;
+  height: auto;
+  width: 400px;
+  box-shadow: 0 0 1px 1px black;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+  box-shadow: 0 0 2px 2px black;
+}
+
+ul.suggestions {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+span.name {
+  display: inline;
+}
+
+span.population {
+  display: inline;
+}
+
+em.red {
+  background-color: yellow;
+  color: tomato;
+}
