@@ -1,5 +1,5 @@
 #Day Four of JS30
-##ARRAY CARDIO 1/4!
+##ARRAY CARDIO 1
 ====
 ###Enhancements to my Russian character frequency graph:
 
