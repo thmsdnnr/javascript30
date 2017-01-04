@@ -3,6 +3,8 @@
 ====
 *Make a multicolored etch-a-sketch and stuff.
 
+*Add colorpickers and stuff
+
 *Options for circles/squares/pretty lines
 
 *Maybe 3D stuff? I dunno.
