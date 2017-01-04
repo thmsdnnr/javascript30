@@ -2,9 +2,9 @@
 ##AJAX Type-Ahead for Input Field
 ===
 
-Added highlighting function which I'm proud of that ... I realized afterwards ... I could have just used str.replace() for with my RegExp. Oh well, it's an exercise, right? I guess I wrote a string.replace() function, ish.
+Added highlighting function which I'm proud of that I realized afterwards I could have just used str.replace() for with my RegExp. Oh well, it's an exercise, right? I guess I wrote a string.replace() function, ish.
 
-```  function sliceHighlight(string,highlight,className="red") {
+```function sliceHighlight(string,highlight,className="red") {
     let beginning = "";
     let middle = "";
     let end = "";
@@ -20,13 +20,11 @@ Added highlighting function which I'm proud of that ... I realized afterwards ..
     //if the match was not at the end, recover those characters
     ((strIndex+highlight.length)<string.length) ? end = string.slice(strIndex+highlight.length) : 0
     return beginning+middle+end;
-  }
-  ```
+  }```
 
 In other words, the above sliceHighlight() function result could be obtained by simply saying:
 
-```
-const regex = new RegExp(highlight, 'i');
+```const regex = new RegExp(highlight, 'i');
 string.replace(regex,'<em class="classname">'+this.value+'</em>');
 ```
 
