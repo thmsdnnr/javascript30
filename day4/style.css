@@ -1,0 +1,66 @@
+body {
+  font-family: 'Helvetica Neue', monospace;
+  font-weight: 100;
+  font-size: 16px;
+  color: black;
+  background-color: #ACE;
+}
+
+div.russiaGraph {
+  font-family: 'Courier', sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  width: auto;
+  height: auto;
+  background-color: #AAA;
+  padding: 40px;
+}
+
+div.bar {
+  align-self: flex-end;
+  flex: 0.75 1.5 auto;
+  vertical-align: top;
+  text-align: center;
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid green;
+}
+
+div.bar:hover {
+  transform: scale(1.8);
+}
+
+div.nameList {
+  width: auto;
+  font-size: 12px;
+  font-weight: 200;
+  word-wrap: normal;
+}
+
+span.legend {
+  height: auto;
+  width: 50px;
+  font-size: 10px;
+  padding: 2px;
+  background-color: #000;
+  color: #FFF;
+  display: block;
+}
+
+span.legend:hover {
+  transform: scale(1.5);
+  background-color: yellow;
+  color: black;
+}
+
+h1 {
+  font-family: 'Helvetica Neue', monospace;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+h1 > h4 {
+  font-size: 16px;
+  font-weight: 200;
+}
