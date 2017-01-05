@@ -30,7 +30,7 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[X] Day 15 Localstorage|Jan 5 2017|
 |[X] Day 16 Mouse Move Shadow|Jan 5 2017|
 |[X] Day 17 Sort Without Articles |Jan 5 2017|
-|[ ] Day 18 Adding up Times and Reduce | |
+|[X] Day 18 Adding up Times and Reduce |Jan 5 2017|
 |[ ] Day 19 Webcam Fun | |
 |[ ] Day 20 Speech Detection | |
 |[ ] Day 21 Geolocation | |
