@@ -1,0 +1,110 @@
+body {
+  background-image: url('./bg.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  color: rgba(0, 0, 2, 0.9);
+  background-color: rgba(244,244,244,0.8);
+}
+
+div h2 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 42px;
+  font-weight: 100;
+  letter-spacing: 6px;
+  text-shadow: 0px 0px #FFFFFF,
+               2px 2px #CCCCCC;
+}
+
+div h4 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+div.svg-circle {
+  border: 3.5px solid gold;
+  background-color: rgba(201,63,65,0.9);
+  border-radius: 50%;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  display:block;
+}
+
+div.svg-circle:hover {
+    background-color: rgba(217,145,93,0.7);
+    transform: rotateY(360deg) rotateX(360deg);
+    transition: all 1000ms ease-in-out;
+  }
+
+svg {
+  display: block;
+  margin: auto;
+  height: 120px;
+  width: 120px;
+}
+
+div.wrapper {
+  width: 400px;
+  padding: 10px 10px 40px 10px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3%;
+}
+
+div.clear {
+  margin: -20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+form.add-items {
+  padding: 10px 0px;
+}
+
+form.add-items input {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  width: 400px;
+  height: 40px;
+  color: #000000;
+  border: 2px solid #CCCCCC;
+  padding: 0 0 0 20px;
+}
+
+form.add-items input:focus { outline: 0; }
+
+button {
+  background-color: rgba(255, 0, 0, 0.5);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  width: 400px;
+  height: 40px;
+}
+
+div.wrapper p {
+  text-align: center;
+  padding: 0
+  width: 200px;
+  margin: auto;
+}
+
+button:focus { outline: 0; }
+
+/*Asterisk svg by Veronika Krpciarova from the Noun Project*/
+ul {
+    list-style-image: url('./bulletPt.svg');
+    list-style-position: outside;
+    margin: 10px 0px 10px 0px;
+}
