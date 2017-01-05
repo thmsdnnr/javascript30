@@ -3,7 +3,7 @@
 ====
 
 * Variables copy by value.
-```
+```javascript
 let age=100;
 let age2=age;
 console.log(age,age2);
@@ -13,7 +13,7 @@ console.log(age,age2); // age2 will NOT be updated
 
 * Arrays/objects copy by reference.
 
-```
+```javascript
 const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 const team = players;
 team[3] = 'Lux'
