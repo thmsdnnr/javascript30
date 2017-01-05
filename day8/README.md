@@ -14,3 +14,11 @@
 *AND NOW WITH AN UPLOAD TO IMGUR feature haha
 
 *ANd Stuff
+
+*mouse cursor acceleration to drive line/stroke thickness
+
+*mobile device acelerometers
+
+*Store JSON file of imager image link and delete hash in local storage
+
+*Display “gallery” of saved images on load page

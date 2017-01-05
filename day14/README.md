@@ -40,14 +40,14 @@ So basically, use .slice() or [].concat to copy arrays unless there's a compelli
 
 ##How to Copy Objects
 
-* Object.assign(). Start with blank object {}. `var objCopy = Object.assign({}, objToCopy, {propToOverwrite: value})`
+* Object.assign(). Start with blank object {}. `javascript var objCopy = Object.assign({}, objToCopy, {propToOverwrite: value})`
 
 * No Object spread yet (e.g., const copyTwo={...objToCopy}) but **WE CAN HOPE**.
 
 # These copies are only ONE LEVEL DEEP for both Arrays and Objects.
 
 For example.
-```
+```javascript
 const inceptionObject = {
   name: "Trinity",
   attributes: {
@@ -66,3 +66,7 @@ console.assert(inceptionCopy.attributes.age!==inceptionObject.attributes.age,'UH
 Console.assert fails because while we have a COPY of the name attribute (level 1), we have a REFERENCE to the nested attributes object.
 
 * HAO TO FIX?! Clonedeep, using JSON `var cloned = JSON.parse(JSON.stringify(objectToClone));` a la "the poor man's deep clone". THOUGH be careful b/c you very rarely need to clonedeep. Somtimes it's just lazy and it's slow and memory hoggy. So yes.
+
+# FUN ENHANCEMENTS:
+
+* Write a deepClone function.
