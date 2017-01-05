@@ -1,0 +1,18 @@
+body {
+  background-color: tomato;
+}
+
+div.container {
+  padding: 10px;
+  font-family: 'Courier', monospace;
+  font-size: 48px;
+  width: 700px;
+  height: auto;
+  padding: 0;
+  margin: 100px auto 0 auto;
+  background-color: rgba(250, 254, 253, 0);
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 10px 10px 20px black;
+  transition: all 10ms ease-in-out;
+  text-align: center;
+}

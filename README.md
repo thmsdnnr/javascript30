@@ -28,7 +28,7 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[ ] Day 13 Slide In On Scroll| |
 |[X] Day 14 JS Reference vs Copy|Jan 5 '17|
 |[X] Day 15 Localstorage|Jan 5 '17|
-|[ ] Day 16 Mouse Move Shadow | |
+|[X] Day 16 Mouse Move Shadow|Jan 5 '17'|
 |[ ] Day 17 Sort Without Articles | |
 |[ ] Day 18 Adding up Times and Reduce | |
 |[ ] Day 19 Webcam Fun | |
