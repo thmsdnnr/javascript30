@@ -1,0 +1,26 @@
+body {
+  background-color: #113;
+}
+
+div.wrapper {
+  width: auto;
+  margin: 100px;
+}
+
+div.app h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 36px;
+  width: 285px;
+  margin: auto;
+  color: #FFFFFF;
+  background-color: rgba(255,5,3,0.8);
+}
+
+div.encourage {
+  width:285px;
+  font-size: 24px;
+  font-weight: 200;
+  background-color: rgba(255,5,3,0.8);
+  margin: auto;
+}
