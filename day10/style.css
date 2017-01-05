@@ -1,0 +1,23 @@
+div.inbox{
+  width: 400px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+button#clearBoxes {
+  height: 40px;
+  width: 400px;
+  border: 1px solid #CCC;
+  background-color: tomato;
+  font-size: 24px;
+}
+
+button#clearBoxes:focus {
+  outline: 0;
+}
+
+button#clearBoxes:active {
+  transform: scale(0.95);
+  font-size: 22px;
+  opacity: 0.8;
+}
