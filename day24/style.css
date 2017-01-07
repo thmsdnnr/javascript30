@@ -61,10 +61,6 @@ div.site-wrap {
 
 nav#main {
   background-color: gold;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  text-align: center;
   width: 700px;
   border: 1px solid black;
   justify-content: center;
@@ -77,8 +73,24 @@ span.catFace{
   text-align: center;
 }
 
+ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
 li {
-  flex: 0 1 auto;
+  flex: 1 auto;
   list-style: none;
   display: inline;
+  font-family: 'Courier New', monospace;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+a {
+  color: green;
 }

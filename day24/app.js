@@ -20,11 +20,6 @@ window.onload = function() {
     ticking=true;
   }
 
-    let headP=document.querySelector('div.headMe');
-    headP.addEventListener('blur',function(){
-    headP.innerHTML+=`<img src="./lovecat.svg" class="loveCat" alt="a cat with love in its eyes" height="400" width="400">`;
-  });
-
   function freeTheNav() {
     if (window.scrollY>=topOfNavbar) { //handle scroll down
       navbar.style.transform=`translateY(${(window.scrollY-topOfNavbar)}px)`;

@@ -40,3 +40,7 @@ function hexToRGB(hex) {
   console.log(`rgb(${R},${G},${B})`);
 }
 ```
+
+##TO-DO:
+
+* More precise (aka pixel-perfect) a-tag scrolling based on window.scrollBy(0, scrollAmountToA)
