@@ -1,19 +1,92 @@
 window.onload = function() {
 const display=document.querySelector('div.detect');
+const rCont=document.querySelector('div.resultsContainer');
+
+let query="kitten";
+
+let cont;
+let aicont;
 
 function fetchWiki(query) {
   var xhr = new XMLHttpRequest();
-  method="GET";
-  url='https://en.wikipedia.org/w/api.php?action=opensearch&format=json&prop=revisions&search='+query+'&rvprop=content&rvlimit=10&rvsection=0';
+  method="POST";
+  url='https://en.wikipedia.org/w/api.php?action=opensearch&format=json&prop=revisions&search='+query+'&rvprop=content&rvlimit=10&rvsection=0&origin=*';
   xhr.open(method,url,true);
   xhr.setRequestHeader("Api-User-Agent","Example/1.0");
+  //xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
   xhr.onload=function() {
     console.log(xhr.responseText);
   };
   xhr.send();
 }
 
+//&continue=pics.continue.continue
+//&aicontinue=pics.continue.aicontinue
+//optional? &aifrom=  QUERY original
+/*
+function fetchPics(query,morePics) {
+  var xhr = new XMLHttpRequest();
+  method="POST";
+  if(!morePics) { //initial query
+  url='https://en.wikipedia.org/w/api.php?action=query&format=json&prop=&list=allimages&aifrom='+query+'&aiprop=dimensions%7Cmime%7Curl&aiminsize=100000&aimaxsize=200000&ailimit=12&origin=*';
+}
+  else {
+  url='https://en.wikipedia.org/w/api.php?action=query&format=json&prop=&list=allimages&aifrom='+query+'&continue='+cont+'&aicontinue='+aicont+'&aiprop=dimensions%7Cmime%7Curl&aiminsize=100000&aimaxsize=200000&ailimit=12&origin=*';
+  }
+  xhr.open(method,url,true);
+  xhr.setRequestHeader("Api-User-Agent","Example/1.0");
+  xhr.onload=function() {
+    if (xhr.readyState===4 && xhr.status===200) {
+      let pics=xhr.response.text; //)['query']['allimages'];
+      let parsed=JSON.parse(pics);
+    //  let pics=parsed.query.allimages;
+      //cont= parsed.continue.continue;
+      //aicont= parsed.continue.aicontinue;
+      console.log(pics);
+      console.log(parsed);
+      postPics(parsed.query.allimages);
+    }
+  };
+  xhr.send();
+}
+*/
+//fetchPics(query,false);
+
+function imgScale(image) {
+  let height=image.height;
+  let width=image.width;
+  let aspRatio=height/width; //fix height at 400px
+  image.height=150; //fix width at 400 px
+  image.width=150;
+  return image;
+}
+
+function postPics(pics) {
+  rCont.innerHTML=null;
+  pics.forEach((img)=>{
+    if(img.url){
+    let d = document.createElement('div');
+    imgScale(img);
+    d.classList+='pic'
+    d.innerHTML+=`<a href="${img.url}" target="_new"><img src="${img.url}" alt="${img.title}" height="${img.height}" width="${img.width}"></a>`;
+    rCont.append(d);
+  }
+  });
+  let b = document.createElement('button');
+  b.classList+='morePics'
+  rCont.append(b);
+  b.addEventListener('click',function(){fetchPics(query,true);});
+}
+
+/*
+function postWikis(wikis) {
+  wikis.forEach((wiki)=>{
+
+  }
+}*/
+
 fetchWiki("cats");
+//fetchPics("kitten");
 
 //HEY TIGER
 var wB="TIGER, tiger, burning bright In the forests of the night, What immortal hand or eye Could frame thy fearful symmetry?";

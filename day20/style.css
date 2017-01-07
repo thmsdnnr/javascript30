@@ -18,3 +18,25 @@ h1 {
   font-weight: 120;
   letter-spacing: 4px;
 }
+
+div.resultsContainer {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid gold;
+}
+
+div.pic {
+  flex: 0 1 auto;
+  align-self: flex-start;
+}
+
+button.morePics{
+  width: 100px;
+  height: 40px;
+  font-family: 'Courier New', sans-serif;
+  font-size: 16px;
+}
