@@ -1,0 +1,84 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /* cssmatic.com WHOA */
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(117,117,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(117,117,255,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(117,117,255,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(117,117,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(117,117,255,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(117,117,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#7575ff', GradientType=0 );
+transition: all 200ms ease-out;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+header h1 {
+  margin: auto;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  width: auto;
+}
+
+div {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+div.headMe{
+  width: 700px;
+  margin: 10px auto 10px auto;
+}
+
+div.site-wrap {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(117,117,255,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%,rgba(117,117,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(117,117,255,1) 0%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(117,117,255,1) 0%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(117,117,255,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(117,117,255,1) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7575ff', endColorstr='#ffffff', GradientType=0 );
+  width: 700px;
+  padding: 20px;
+  word-spacing: 0.4em;
+  line-height: 2em;
+  margin: auto;
+  background-color: rgba(255, 0, 0, 0.5);
+  transition: all 200ms ease-in;
+}
+
+nav#main {
+  background-color: gold;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  text-align: center;
+  width: 700px;
+  border: 1px solid black;
+  justify-content: center;
+  margin: 10px auto 10px auto;
+}
+
+span.catFace{
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+li {
+  flex: 0 1 auto;
+  list-style: none;
+  display: inline;
+}
