@@ -1,0 +1,17 @@
+div.contanier {
+  margin: 10px;
+}
+
+div.items {
+  padding: 5px;
+  border: 1px solid black;
+  width: 500px;
+  margin: auto;
+}
+
+div.item {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 1px solid black;
+}

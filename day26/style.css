@@ -1,0 +1,91 @@
+div.container {
+  padding: 10px;
+  width: auto;
+  margin: 20px auto 20px auto;
+}
+
+div.wrapper {
+  width: 600px;
+  margin: auto;
+}
+
+span.hover {
+  transition all 200ms ease-in;
+  border: 1px solid black;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 5px;
+  z-index: -1;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 2px rgba(25,254,25,0.9);
+}
+
+.invisible {display: none !important;}
+
+.navBox {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background-color: rgba(255, 255, 255, 1.0);
+  border-radius: 5px;
+  transition all 200ms ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 1;
+  height: auto;
+  width: auto;
+  max-width: 400;
+  border: 2px solid gold;
+  -webkit-box-shadow: 3px 6px 5px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 6px 5px 3px rgba(0,0,0,0.75);
+  box-shadow: 3px 6px 5px 3px rgba(0,0,0,0.75);
+}
+
+.navChild {
+  word-wrap: break-word;
+  width: auto;
+  max-width: 400;
+}
+
+div.nav {
+  font-family: 'Impact';
+  font-size: 400px;
+  font-weight: bold;
+  margin: 10px;
+  border: 1px black solid;
+  letter-spacing: 25px;
+  display: none;
+  width:600px;
+}
+
+span.red {
+  color: tomato;
+}
+
+ul.menu {
+  display: flex;
+  flex-wrap: column nowrap;
+  align-items: center;
+  margin: auto;
+  border: 1px solid black;
+  width: 600px;
+  justify-content: center;
+}
+
+li {
+  font-family: 'Bodoni';
+  font-size: 20px;
+  justify-content: center;
+  vertical-align: middle;
+  flex: 0 2 auto;
+  flex-grow: 2;
+  align-self: center;
+  height: 40px;
+  width: auto;
+  list-style: none;
+  border: 1px solid green;
+}

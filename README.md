@@ -8,7 +8,7 @@ I'm looking forward to beefing up my JS knowledge, particularly without relying 
 
 I'm doing this along with my FreeCodeCamp projects on my quest to become a Front-End Developer. Huzzah!
 
-##STATUS
+##STATUS: GOAL FINISH BY TUESDAY JAN 10 2017
 
 ###completed on:
 |project|date completed|
@@ -37,9 +37,9 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[X] Day 22 Followalong Link Highlighter |Jan 7 2017|
 |[X] Day 23 Speech Synthesis |Jan 6 2017|
 |[X] Day 24 Sticky Nav |Jan 7 2017|
-|[ ] Day 25 Event Capture, Propagation | |
-|[ ] Day 26 Stripe Follow-along Nav | |
-|[ ] Day 27 Click and Drag | |
+|[X] Day 25 Event Capture, Propagation |Jan 7 2017|
+|[ ] Day 26 Stripe Follow-along Nav | | <MIDWAY DONE>
+|[ ] Day 27 Click and Drag | | <MIDWAY DONE>
 |[ ] Day 28 Video Speed Controller | |
 |[ ] Day 29 Countdown Timer | |
 |[ ] Day 30 Whack a Mole | |
