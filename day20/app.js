@@ -21,7 +21,6 @@ function fetchWiki(query,callback) {
 
 function postWikis(wikis) {
   rCont.innerHTML=null;
-  console.log(wikis+"postwikis");
   for(var i=0;i<wikis[1].length;i++)
   {
     if(wikis[1][i]){
@@ -72,7 +71,7 @@ function recognizeMe() {
     success=true;
     var last = e.results.length-1;
     var color = e.results[last][0].transcript;
-    console.log(color+" confidence:"+e.results[0][0].confidence);
+    //console.log(color+" confidence:"+e.results[0][0].confidence);
     display.innerHTML=null;
     display.innerHTML=color;
 
@@ -85,7 +84,6 @@ function recognizeMe() {
   recognition.onspeechend = function() {
     recognition.stop();
     if (!success) {drawMoreSpeechBtn();}
-    console.log("speech over");
   }
 
   recognition.onerror = function(e) {
