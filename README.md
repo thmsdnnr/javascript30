@@ -32,11 +32,11 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[X] Day 17 Sort Without Articles |Jan 5 2017|
 |[X] Day 18 Adding up Times and Reduce |Jan 5 2017|
 |[ ] Day 19 Webcam Fun | |
-|[ ] Day 20 Speech Detection | |
-|[ ] Day 21 Geolocation | |
-|[ ] Day 22 Followalong Link Highlighter | |
-|[ ] Day 23 Speech Synthesis | |
-|[ ] Day 24 Sticky Nav | |
+|[X] Day 20 Speech Detection |Jan 6 2017|
+|[X] Day 21 Geolocation |Jan 6 2017|
+|[X] Day 22 Followalong Link Highlighter |Jan 7 2017|
+|[X] Day 23 Speech Synthesis |Jan 6 2017|
+|[X] Day 24 Sticky Nav |Jan 7 2017|
 |[ ] Day 25 Event Capture, Propagation | |
 |[ ] Day 26 Stripe Follow-along Nav | |
 |[ ] Day 27 Click and Drag | |

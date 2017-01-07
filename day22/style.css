@@ -8,16 +8,21 @@ body {
   background-color: #CCC;
 }
 
-ul.menu {
+ul {
   padding: 25px 0 0 0;
   display: flex;
   flex-flow: row nowrap;
   padding: 20px;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   width: 700px;
   margin: auto;
   background-color: rgba(122, 122, 222, 0.5);
+}
+
+li {
+  flex: 1;
+  list-style-type: none;
 }
 
 div.wrapper {
@@ -34,12 +39,6 @@ div.container {
   width: 700px;
   margin: auto;
   border-radius: 5px;
-}
-
-li {
-  flex: 0 1 auto;
-  width: 100%;
-  list-style-type: none;
 }
 
 span.hover {
