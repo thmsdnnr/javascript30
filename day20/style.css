@@ -13,7 +13,7 @@ div.detect {
 }
 
 div.resultsContainer {
-  width: 670px;
+  width: 600px;
   margin: auto;
   display: flex;
   flex-direction: row;
