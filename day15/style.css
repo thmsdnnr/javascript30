@@ -1,13 +1,5 @@
 body {
-  background-image: url('./bg.jpg');
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility:    hidden;
-  -ms-backface-visibility:     hidden;
+  background-color: #DDD;
 }
 
 div {
