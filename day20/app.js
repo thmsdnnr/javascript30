@@ -45,14 +45,22 @@ function speechSynthesis(phrase) {
     }
 
 const constraints = {audio: true};
-var promiseV=navigator.mediaDevices.getUserMedia(constraints).then(recognizeMe).catch(err => {console.error(`OH NO!!!`, err);});
+
+try{
+  throw navigator.mediaDevices.getUserMedia(constraints).then(recognizeMe).catch(err => {console.error(`OH NO!!!`, err);});
+}
+catch(e){
+  if (e.name=="TypeError"){
+    display.innerHTML=`<h4>Sorry, but to enjoy this website, you'll need Google Chrome or Mozilla Firefox.</h4>`;
+  }
+}
 
 function recognizeMe() {
   var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
   var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
   var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
   var recognition = new SpeechRecognition();
-  
+
   recognition.lang = 'en-US';
   recognition.continuous = true;
   recognition.interimResults = false;
