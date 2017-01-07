@@ -12,6 +12,42 @@ div.detect {
   font-weight: 100;
 }
 
+div.resultsContainer {
+  width: 670px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 2px solid gold;
+}
+
+div.wiki {
+  padding: 0 10px 0 10px;
+  width: 670px;
+  height: 170px;
+  flex: 0 1 auto;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: left;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+div.wiki:hover {
+  width: 100%;
+  background-color: rgba(131, 43, 22, 0.2);
+}
+
+button.speakMore {
+  width: 100px;
+  height: 40px;
+  font-family: 'Courier New', sans-serif;
+  font-size: 16px;
+}
+
 h1 {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 40px;
@@ -19,24 +55,23 @@ h1 {
   letter-spacing: 4px;
 }
 
-div.resultsContainer {
-  width: 700px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border: 1px solid gold;
+h2 {
+  font-family: 'Courier New', monospace;;
+  font-size: 24px;
+  letter-spacing: 2px;
 }
 
-div.pic {
-  flex: 0 1 auto;
-  align-self: flex-start;
-}
-
-button.morePics{
-  width: 100px;
-  height: 40px;
-  font-family: 'Courier New', sans-serif;
+h4 {
+  font-family: 'Helvetica Neue', sans-serif;
   font-size: 16px;
+  font-weight: 120;
+  letter-spacing: 8px;
+}
+
+a {
+  color: tomato;
+}
+
+a:hover {
+  color: silver;
 }
