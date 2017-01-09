@@ -6,6 +6,11 @@ It should be obvious, but attributes like MAX on an input are NOT style attribut
 
 It works! Was a little easier to implement than I thought it would be.
 
+##BUGS:
+
+* [ ] Play button disappears-jumps on first press
+* [ ] Screen does a reflow while waiting for the video to be loaded. Wait to draw player until onReady event from the video or server.
+
 ##TO-DO:
 
 * Improve CSS styling
