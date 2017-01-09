@@ -41,5 +41,5 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[ ] Day 26 Stripe Follow-along Nav | | <MIDWAY DONE>
 |[ ] Day 27 Click and Drag | | <MIDWAY DONE>
 |[X] Day 28 Video Speed Controller |Jan 9 2017|
-|[ ] Day 29 Countdown Timer | |
+|[X] Day 29 Countdown Timer |Jan 9 2017|
 |[ ] Day 30 Whack a Mole | |

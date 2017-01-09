@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background-color: tomato;
+}
+
+div.pagecont {
+  width: 800px;
+  margin: auto;
+}
+
+div.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  margin: auto;
+}
+
+footer {
+  width: 800px;
+  height: 40px;
+  background: rgba(133,133,133,0.2);
+  border: 2px dotted green;
+  display: flex;
+  text-align: center;
+}
+
+div.footsie {
+  flex: 1;
+  justify-content: center;
+}
+
+label {
+  display: inline-block;
+}
+
+div.timerSuggestion {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  flex: 0 1 auto;
+  display: inline-flex;
+  width: 150px;
+  height: 40px;
+  background-color: rgba(0,0,233,0.4);
+  border: 1px solid gold;
+  align-content: center;
+  align-self: center;
+}
+
+div.timerSuggestion:hover {
+  transform: scale(1.1);
+  opacity = 1.0;
+  background-color: rgba(0,0,233,1.0);
+  transition: all 200ms ease-in-out;
+}
+
+div.container {
+  margin: 0 auto 10px auto;
+  width: 500px;
+  height: auto;
+}
+
+div.custom {
+  width:800px;
+  height:40px;
+  background-color: silver;
+}
+
+div.timer {
+  font-family: 'Open Sans', sans-serif;
+  font-style: regular;
+  font-size: 64px;
+  text-shadow: 1px 1px 1px #000,
+               3px 3px 3px #0A0;
+  text-align: center;
+}
