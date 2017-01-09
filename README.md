@@ -42,4 +42,4 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[ ] Day 27 Click and Drag | | <MIDWAY DONE>
 |[X] Day 28 Video Speed Controller |Jan 9 2017|
 |[X] Day 29 Countdown Timer |Jan 9 2017|
-|[ ] Day 30 Whack a Mole | |
+|[X] Day 30 ~Whack a Mole~ PET A CAT |Jan 9 2017|
