@@ -20,18 +20,18 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[X] Day 5 Flex Panel Gallery|Jan 4 2017|
 |[X] Day 6 AJAX Typeahead|Jan 4 2017|
 |[X] Day 7 Array Cardio Day 2|Jan 4 2017|
-|[X] Day 8 Fun with HTML5 Canvas **still adding features though**|Jan 4 2017|
+|[X] Day 8 Fun with HTML5 Canvas **still adding features though |Jan 4 2017| <DONE BUT ADDING ENHANCEMENTS>
 |[X] Day 9 Dev Tools|Jan 4 2017|
 |[X] Day 10 Hold Shift + Check Checkboxes in Between|Jan 4 2017|
 |[ ] Day 11 Custom HTML5 Video Player| |
 |[X] Day 12 Key Sequence Detection (UMAMI CODE)|Jan 4 2017|
-|[ ] Day 13 Slide In On Scroll| |
+|[X] Day 13 Slide In On Scroll|Jan 9 2017|
 |[X] Day 14 JS Reference vs Copy|Jan 5 2017|
 |[X] Day 15 Localstorage|Jan 5 2017|
 |[X] Day 16 Mouse Move Shadow|Jan 5 2017|
 |[X] Day 17 Sort Without Articles |Jan 5 2017|
 |[X] Day 18 Adding up Times and Reduce |Jan 5 2017|
-|[ ] Day 19 Webcam Fun | |
+|[ ] Day 19 Webcam Fun | | <DONE BUT ADDING ENHANCEMENTS>
 |[X] Day 20 Speech Detection |Jan 6 2017|
 |[X] Day 21 Geolocation |Jan 6 2017|
 |[X] Day 22 Followalong Link Highlighter |Jan 7 2017|
