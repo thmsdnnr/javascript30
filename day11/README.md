@@ -1,20 +1,15 @@
 #Day Eleven of JS30
-##CHECK YOURSELF before you Wreck Yourself
-###Or, gotta check em' allllllll!
+##Custom HTML Video Player
 ====
 
-####TIL: When you pass a boolean as an argument to a function, be V. V. careful you don't do so as a STRING "true"/"false", because a STRING "false" is always TRUE. Actually, even
+It should be obvious, but attributes like MAX on an input are NOT style attributes. Ran into trouble when trying to set the maximum range for my input slider to input.style.max instead of input.max. My strategy for the slider was to create an input type of slider with the width of the video and a max-value of the width of the video. Then I scale the slider's position by the current fraction of the video completed, given by `(video.currentTime/video.duration)`.
 
-Strategy: listen for event click on every div.item. `const items = document.querySelectorAll('div.item');`
+It works! Was a little easier to implement than I thought it would be.
 
-Set flag for shiftDown. If click on a div item and a shiftDown event occur, check all children of div.inbox for status checked:
-`const checked=(Array.from(items).filter((i)=>i.children[0].checked===true));`
+##TO-DO:
 
-Obtain the index of each of the checked items
-`var indexes = checked.map(c=>Array.from(items).indexOf(c));`
+* Improve CSS styling
 
-Then just iterate over the elements and set checked
+* Implement an "on-hover" so that the controls pop into the player from the bottom/top/left/right depending on where the hover happens and are scaled appropriately
 
-* An extra challenge?! Make it work for *unchecking* en masse as well. **ACCOMPLISHED**
-
-* Make the effect work for divs as a whole instead of just checkboxes!
+<http://stackoverflow.com/questions/3463621/css-label-text-right-below-input-element>
