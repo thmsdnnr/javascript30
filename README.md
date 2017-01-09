@@ -23,7 +23,7 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[X] Day 8 Fun with HTML5 Canvas **still adding features though |Jan 4 2017| <DONE BUT ADDING ENHANCEMENTS>
 |[X] Day 9 Dev Tools|Jan 4 2017|
 |[X] Day 10 Hold Shift + Check Checkboxes in Between|Jan 4 2017|
-|[ ] Day 11 Custom HTML5 Video Player| |
+|[X] Day 11 Custom HTML5 Video Player|Jan 9 2017|
 |[X] Day 12 Key Sequence Detection (UMAMI CODE)|Jan 4 2017|
 |[X] Day 13 Slide In On Scroll|Jan 9 2017|
 |[X] Day 14 JS Reference vs Copy|Jan 5 2017|
@@ -40,6 +40,6 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[X] Day 25 Event Capture, Propagation |Jan 7 2017|
 |[ ] Day 26 Stripe Follow-along Nav | | <MIDWAY DONE>
 |[ ] Day 27 Click and Drag | | <MIDWAY DONE>
-|[ ] Day 28 Video Speed Controller | |
+|[X] Day 28 Video Speed Controller |Jan 9 2017|
 |[ ] Day 29 Countdown Timer | |
 |[ ] Day 30 Whack a Mole | |
