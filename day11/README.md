@@ -13,8 +13,12 @@ It works! Was a little easier to implement than I thought it would be.
 
 ##TO-DO:
 
-* Improve CSS styling
+* [ ] Improve CSS styling (flexbox or not?)
 
-* Implement an "on-hover" so that the controls pop into the player from the bottom/top/left/right depending on where the hover happens and are scaled appropriately
+* [ ] Make more responsive (mobile?)
+
+* [ ] Add duration of video at right
+
+* [ ]Implement an "on-hover" so that the controls pop into the player from the bottom/top/left/right depending on where the hover happens and are scaled appropriately
 
 <http://stackoverflow.com/questions/3463621/css-label-text-right-below-input-element>
