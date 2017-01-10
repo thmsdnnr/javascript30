@@ -42,6 +42,7 @@ window.onload = function() {
     //control box "appear on hover" dimensions
     controls.style.width=video.width-2;
     controls.style.top=video.height-47;
+    controls.style.left=(playerContainer.offsetWidth-playerContainer.width)+"px";
 
     //progress bar dimensions
     let seek=document.querySelector('input#seek');

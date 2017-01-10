@@ -2,6 +2,8 @@
 ##Custom HTML Video Player
 ====
 
+###Bug in Safari: hover controls are to the far right of the player instead of displaying inline in picture!
+
 ##ENHANCEMENTS:
 
 * Tool-tips for select control bar items
