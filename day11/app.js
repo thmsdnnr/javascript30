@@ -1,5 +1,4 @@
 window.onload = function() {
-
   //global video flags
   let isMuted=false;
   let theaterMode=false;
@@ -41,8 +40,8 @@ window.onload = function() {
 
     //control box "appear on hover" dimensions
     controls.style.width=video.width-2;
-    controls.style.top=video.height-47;
-    controls.style.left=(playerContainer.offsetWidth-playerContainer.width)+"px";
+    controls.style.top=video.height-56;
+    //controls.style.left=(playerContainer.offsetWidth-playerContainer.width)+"px";
 
     //progress bar dimensions
     let seek=document.querySelector('input#seek');
@@ -52,9 +51,24 @@ window.onload = function() {
     seek.max=video.width;
     seek.value=0;
 
-    playerContainer.addEventListener('mouseover',function(e){showControls();});
+    //playerContainer.addEventListener('mouseover',function(e){showControls();});
+    //playerContainer.addEventListener('mouseleave',hideControls);
     playerContainer.addEventListener('mouseleave',hideControls);
 }
+
+//make controls disappear if mouse is over video but hasn't moved for ~2s
+//make them reappear if the mouse moves again
+  video.addEventListener('mousemove',hideControlsTimeout);
+  let hideControlsInterval;
+
+  function hideControlsTimeout() {
+    let controls = document.querySelector('div#controls');
+    if (controls.classList.contains('visible')) {
+    clearInterval(hideControlsInterval);
+    hideControlsInterval=setTimeout(hideControls,2000);
+  }
+    else { controls.classList.add('visible'); }
+  }
 
   function showControls() {controls.classList.add('visible');}
   function hideControls() {controls.classList.remove('visible');}
@@ -136,30 +150,37 @@ window.onload = function() {
   }
 
 //volume slider with speaker hover
-  const speaker=document.querySelector('span#volume');
+  //const speaker=document.querySelector('span#volumeSlider');
+  let mousingVolume=false;
+  let hideInterval;
+
   const speakerImg=document.querySelector('img#volume');
-  const vol=document.querySelector('input#volume');
-  speaker.addEventListener('mouseover',displayVolume);
-  speaker.addEventListener('mouseleave',hideVolume);
-
+  const vol=document.querySelector('span#volumeImg');
+  vol.addEventListener('mouseover',displayVolume);
+  vol.addEventListener('mouseleave',hideVolume);
   speakerImg.addEventListener('click',toggleMute);
+  const slider=document.querySelector('input#volume');
+  //vol.addEventListener('mousemove',function(e){console.log(e); mousingVolume=true;});
 
-  function displayVolume() { vol.classList.add('visible'); }
-  function hideVolume() { vol.classList.remove('visible'); }
+  function displayVolume() {
+    clearInterval(hideInterval);
+    slider.classList.add('visible'); }
+  function hideVolume() { hideInterval=setTimeout(function(){ slider.classList.remove('visible'); },1000); }
 
   function toggleMute() { //TODO and toggle speaker image
     let vImg=document.querySelector('img#volume');
+    let vSlider=document.querySelector('input#volume');
     if (!isMuted) {
-      lastVol=vol.value; //remember last volume to reset upon unmute
+      lastVol=vSlider.value; //remember last volume to reset upon unmute
       volumeAdjust(null,0);
-      vol.value=0;
+      vSlider.value=0;
       isMuted=true;
       vImg.src='./images/mute.svg'; //">` : playPause.innerHTML = `<img src="./images/pause.svg">`;
       //toggle speaker image to be muted
     }
     else { //TODO toggle speaker image to be unmuted
       volumeAdjust(null,lastVol);
-      vol.value=lastVol;
+      vSlider.value=lastVol;
       isMuted=false;
       vImg.src='./images/volume.svg';
     }

@@ -7,14 +7,15 @@
 </head>
 <body>
   <div id="player">
-    <video class="player" src="https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164" {autoplay="false" autostart="false"}></video>
+          <video class="player" src="./test_vid.mp4" {autoplay="false" autostart="false"}></video>
   <div id="controls" class="visible">
     <div id="progressBar"><input type="range" id="seek" value="0"></div>
     <div id="buttonsSliders"><span id="play"><img src="./images/play.svg" id="play"></span>
       <span id="videoTime"></span>
       <span id="bkwd"><img src="./images/bkwd.svg" id="b"></span>
       <span id="fwd"><img src="./images/fwd.svg" id="f"></span>
-      <span id="volume"><label for="volume"><img src="./images/volume.svg" id="volume"><input type="range" id="volume" min="0" max="1" step="0.1" value="0.5"></label></span>
+        <span id="volumeImg"><img src="./images/volume.svg" id="volume">
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5"></span>
       <span id="rate"><label for="rate">--/++</label><input type="range" id="rate" min="0.5" max="2" step="0.5" value="1.0"></span>
       <span id="theaterMode"><img src="./images/expand.svg" id="theater"></span>
   </div>

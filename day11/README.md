@@ -2,12 +2,21 @@
 ##Custom HTML Video Player
 ====
 
-###Bug in Safari: hover controls are to the far right of the player instead of displaying inline in picture!
+**OH MY GOODNESS**
+[http://stackoverflow.com/questions/489340/vertically-align-text-next-to-an-image](http://stackoverflow.com/questions/489340/vertically-align-text-next-to-an-image)
+
+[X] Bug in Safari: hover controls are to the far right of the player instead of displaying inline in picture!
+--was not a bug. Just a CSS foible.
+
+"You see, it doesn’t always default to the top left of the browser window. Instead, what position: absolute; really does is position the element relative to its first non-statically-positioned ancestor (inherit doesn’t count either). Since there hasn’t been one of those in previous examples, it was simply reset to the origin of the page."
+[https://codemyviews.com/blog/the-lowdown-on-absolute-vs-relative-positioning](https://codemyviews.com/blog/the-lowdown-on-absolute-vs-relative-positioning)
 
 ##ENHANCEMENTS:
 
 * Tool-tips for select control bar items
+
 * "Stats for nerds" div with video statistics modal
+
 * Click-and-drag bottom left or bottom right corner to expand div with preserved aspect ratio
 
 "Slider Preview Image" [ ]
@@ -33,17 +42,19 @@ It works! Was a little easier to implement than I thought it would be.
 
 ##BUGS:
 
-* [ ] Play button disappears-jumps on first press
-* [ ] Screen does a reflow while waiting for the video to be loaded. Wait to draw player until onReady event from the video or server.
+* [X] Play button disappears-jumps on first press
+* [X] Screen does a reflow while waiting for the video to be loaded. Wait to draw player until onReady event from the video or server.
 
 ##TO-DO:
 
-* [ ] Improve CSS styling (flexbox or not?)
+* [ ] Add feature so on initial hover the controls are displayed but if the mouse doesn't move for about 2 seconds and it is over the video, the navbar disappears until the next mouse move.
+
+* [X] Improve CSS styling (flexbox or not?)
 
 * [ ] Make more responsive (mobile?)
 
-* [ ] Add duration of video at right
+* [X] Add duration of video at right
 
-* [ ]Implement an "on-hover" so that the controls pop into the player from the bottom/top/left/right depending on where the hover happens and are scaled appropriately
+* [X]Implement an "on-hover" so that the controls pop into the player from the bottom/top/left/right depending on where the hover happens and are scaled appropriately
 
 <http://stackoverflow.com/questions/3463621/css-label-text-right-below-input-element>

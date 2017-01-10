@@ -1,26 +1,28 @@
 div#player {
   margin: auto;
-  padding: 1px;
-  border: 1px solid black;
+  position: relative;
+  padding: 1px 0 1px 0;
+  border: 1px solid silver;
+}
+
+video#player {
+  position: relative;
 }
 
 div#controls {
   display: none;
-  height: 55px;
-  padding: 0;
-  margin: 0;
 }
 
 div#controls.visible {
   padding: 1px;
   height: 55px;
   display: inline;
-  z-index: 1;
-  flex: 2 auto;
-  flex-flow: row wrap;
+  flex: 2;
+  flex-flow: row nowrap;
   justify-content: center;
   position: absolute;
-  opacity: 0.8;
+  left: 0;
+  opacity: 1.0;
   background-color: rgba(212, 213, 215, 0.7);
 }
 
@@ -35,11 +37,15 @@ div#buttonsSliders {
 
 div#buttonsSliders span {
   flex: 0 1 auto;
-  boder: 1px solid black;
+  border: 1px solid black;
 }
 
 div#progressBar {
   height: 20px;
+}
+
+span {
+  vertical-align: middle;
 }
 
 span#videoTime {
@@ -58,12 +64,20 @@ input {
 
 label {
   display: inline;
-  align-self: center;
   font-weight: 100;
   font-size: 14px;
   color: black;
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 100;
+}
+
+span#volumeSlider {
+  display:none;
+}
+
+span#volumeImg {
+  flex: 0;
+  margin: 0;
 }
 
 input#volume {
@@ -73,11 +87,11 @@ input#volume {
 }
 
 input#volume.visible {
-  width: 100px;
-  height: 10px;
   display: inline;
-  vertical-align: top;
-  padding: 15px;
+}
+
+img#volume {
+vertical-align: middle;
 }
 
 input#rate {
