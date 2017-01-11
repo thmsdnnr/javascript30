@@ -77,3 +77,5 @@ Divots inspired/extended by this (http://www.cssportal.com/css-tooltip-generator
 [X] Slightly more responsive?
 [ ] extend tooltip code, maybe make a "generate a tooltip" page in JS to practice displaying raw code / manipulating vars
 [ ] fix up a few of the "Magic numbers" like in the aptly named magicNavigation() function:
+
+[ ] could tweak divot position in the div based on mouse position, link text position, etc., but this is one of those diminishing returns things IMHO.
