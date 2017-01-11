@@ -9,6 +9,7 @@ I'm looking forward to beefing up my JS knowledge, particularly without relying 
 I'm doing this along with my FreeCodeCamp projects on my quest to become a Front-End Developer. Huzzah!
 
 ##STATUS: GOAL FINISH BY TUESDAY JAN 10 2017
+##RESULT: Finished initial push of all projects <WEDS JAN 11>. Can improve styling/add features on some but minimal feature set looks good!
 
 ###completed on:
 |project|date completed|
@@ -21,7 +22,7 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[X] Day 6 AJAX Typeahead|Jan 4 2017|
 |[X] Day 7 Array Cardio Day 2|Jan 4 2017|
 |[X] Day 8 Fun with HTML5 Canvas **still adding features though |Jan 4 2017|
-|[ ] ^^ (DONE BUT ADDING ENHANCEMENTS)|[ ]|
+|[ ] ^enhancements | |
 |[X] Day 9 Dev Tools|Jan 4 2017|
 |[X] Day 10 Hold Shift + Check Checkboxes in Between|Jan 4 2017|
 |[X] Day 11 Custom HTML5 Video Player|Jan 9 2017|
@@ -39,7 +40,7 @@ I'm doing this along with my FreeCodeCamp projects on my quest to become a Front
 |[X] Day 23 Speech Synthesis |Jan 6 2017|
 |[X] Day 24 Sticky Nav |Jan 7 2017|
 |[X] Day 25 Event Capture, Propagation |Jan 7 2017|
-|[ ] Day 26 Stripe Follow-along Nav | | <MIDWAY DONE>
+|[X] Day 26 Stripe Follow-along Nav |Jan 11 2017|
 |[ ] Day 27 Click and Drag | | <MIDWAY DONE>
 |[X] Day 28 Video Speed Controller |Jan 9 2017|
 |[X] Day 29 Countdown Timer |Jan 9 2017|
