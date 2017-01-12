@@ -1,32 +1,33 @@
-window.onload=function () {
+window.onload=function() {
+  let mouseDown=false;
+  let curXPos=0;
 
-  let mouseHeld=false;
+  let container=document.querySelector("div.items");
+  let items=document.querySelectorAll("div.item");
 
-  let divs=document.querySelectorAll('div.item');
-  let container=document.querySelector('div.container');
+  items.forEach((i)=>i.addEventListener('mousedown',handleClick));
+  items.forEach((i)=>i.addEventListener('mouseup',handleClick));
+  function handleClick(e) {
+      (e.type==='mouseup') ? e.target.classList.remove('clicked') : 0;
+      (e.type==='mousedown') ? e.target.classList.add('clicked') : 0;
+    }
 
-  //console.log(Array.from(divs).forEach((d)=>d.className));
-  divs.forEach((d)=>d.addEventListener('mousedown',mouseDown));
+  container.addEventListener('mousemove',handleDrag);
+  container.addEventListener('mousedown',()=>mouseDown=true);
+  container.addEventListener('mouseup',()=>mouseDown=false);
 
-  container.addEventListener('mousedown',mouseDown);
-  container.addEventListener('mouseup',function(){mouseHeld=false;});
-  container.addEventListener('mousemove',mouseMove);
+  function handleDrag(e) { //negative X transform is to the right, + X transform is to the left
+    let first=container.firstElementChild;
+    let last=container.lastElementChild;
+    let xMin=first.offsetLeft-first.scrollWidth;
+    let xMax=last.offsetLeft-last.scrollWidth/2;
+    let nextXCoord=curXPos-e.movementX;
 
-  function mouseDown(e) {
-    if (e.target.id==='itemContainer') {return; }
-    e.stopPropagation();
-    mouseHeld=true;
-    console.log(e);
-    console.log(e.target.className);
-    let coords=e.target.getBoundingClientRect();
-    //e.target.style.transform=`translate(${coords.left}px,${coords.top+coords.height}px)`;
-    //let coords=e.target.getBoundingClientRect();
+    let inBounds = ((xMin<nextXCoord)&&(xMax>nextXCoord));
+
+    if (inBounds&&mouseDown) {
+      curXPos=nextXCoord;
+      items.forEach((i)=>i.style.transform=`translateX(${-curXPos}px)`);
+    }
   }
-
-  function mouseMove(e) {
-    if (!mouseHeld) {return;}
-    e.target.style.transform=`translate(${e.movementX}px,${e.movementY}px)`;
-    console.log(e);
-  }
-  console.log(divs[0].className.split(" ")[1]); //divs[0].className.split(" ")[1]
 }
